@@ -11,6 +11,8 @@
 		A2D77DEF1B99BB9600CFA432 /* cpp11libtest.m in Sources */ = {isa = PBXBuildFile; fileRef = A2D77DEE1B99BB9600CFA432 /* cpp11libtest.m */; };
 		A2D77DFD1B99E0B400CFA432 /* Logger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A2D77DFB1B99E0B400CFA432 /* Logger.cpp */; };
 		A2D77DFE1B99E0B400CFA432 /* Logger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A2D77DFB1B99E0B400CFA432 /* Logger.cpp */; };
+		A2D77E011B99E48500CFA432 /* IsZero.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A2D77DFF1B99E48500CFA432 /* IsZero.cpp */; };
+		A2D77E021B99E48500CFA432 /* IsZero.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A2D77DFF1B99E48500CFA432 /* IsZero.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -33,6 +35,8 @@
 		A2D77DEE1B99BB9600CFA432 /* cpp11libtest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = cpp11libtest.m; sourceTree = "<group>"; };
 		A2D77DFB1B99E0B400CFA432 /* Logger.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Logger.cpp; sourceTree = "<group>"; };
 		A2D77DFC1B99E0B400CFA432 /* Logger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Logger.h; sourceTree = "<group>"; };
+		A2D77DFF1B99E48500CFA432 /* IsZero.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IsZero.cpp; sourceTree = "<group>"; };
+		A2D77E001B99E48500CFA432 /* IsZero.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IsZero.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +104,8 @@
 		A2D77DFA1B99E0B400CFA432 /* lib */ = {
 			isa = PBXGroup;
 			children = (
+				A2D77DFF1B99E48500CFA432 /* IsZero.cpp */,
+				A2D77E001B99E48500CFA432 /* IsZero.h */,
 				A2D77DFB1B99E0B400CFA432 /* Logger.cpp */,
 				A2D77DFC1B99E0B400CFA432 /* Logger.h */,
 			);
@@ -194,6 +200,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A2D77DE01B99BB4500CFA432 /* main.cpp in Sources */,
+				A2D77E011B99E48500CFA432 /* IsZero.cpp in Sources */,
 				A2D77DFD1B99E0B400CFA432 /* Logger.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -203,6 +210,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A2D77DEF1B99BB9600CFA432 /* cpp11libtest.m in Sources */,
+				A2D77E021B99E48500CFA432 /* IsZero.cpp in Sources */,
 				A2D77DFE1B99E0B400CFA432 /* Logger.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,8 +8,9 @@
 
 #import <Cocoa/Cocoa.h>
 #import <XCTest/XCTest.h>
-#import "Logger.h"
 #include <unistd.h>
+#include "Logger.h"
+#include "IsZero.h"
 
 static char FILEPATH[] = "/tmp/cpp11libtest.log"; 
 
@@ -31,7 +32,7 @@ static char FILEPATH[] = "/tmp/cpp11libtest.log";
     [super tearDown];
 }
 
-- (void)testExample {
+- (void)testLogger {
     
     DEBUG_LOG("abc[%d]\n", 5);
     usleep(2000);
@@ -44,6 +45,21 @@ static char FILEPATH[] = "/tmp/cpp11libtest.log";
     //NSError* error;
     //NSString *string = [NSString stringWithContentsOfFile:[NSString stringWithUTF8String:FILEPATH] encoding:NSUTF8StringEncoding error:&error];
     //XCTAssert([string isEqualToString:@""], @"%@", string);
+}
+
+- (void)testIsZero {
+
+    XCTAssert( IsZero( (float)0.0000000001 ) );
+    XCTAssert( IsZero( (float)0.000000001 ) );
+    XCTAssert( IsZero( (float)0.00000001 ) );
+    XCTAssert( IsZero( (float)0.0000001 ) );
+    XCTAssert( !IsZero( (float)0.000001 ) );
+    
+    XCTAssert( IsZero( (float)-0.0000000001 ) );
+    XCTAssert( IsZero( (float)-0.000000001 ) );
+    XCTAssert( IsZero( (float)-0.00000001 ) );
+    XCTAssert( IsZero( (float)-0.0000001 ) );
+    XCTAssert( !IsZero( (float)-0.000001 ) );
 }
 
 @end
