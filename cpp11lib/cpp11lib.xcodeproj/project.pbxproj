@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A283520A1BB3BB96006DD834 /* StopWatch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A28352081BB3BB96006DD834 /* StopWatch.cpp */; };
+		A283520B1BB3BD25006DD834 /* StopWatch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A28352081BB3BB96006DD834 /* StopWatch.cpp */; };
 		A2D77DE01B99BB4500CFA432 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A2D77DDF1B99BB4500CFA432 /* main.cpp */; };
-		A2D77DEF1B99BB9600CFA432 /* cpp11libtest.m in Sources */ = {isa = PBXBuildFile; fileRef = A2D77DEE1B99BB9600CFA432 /* cpp11libtest.m */; };
+		A2D77DEF1B99BB9600CFA432 /* cpp11libtest.mm in Sources */ = {isa = PBXBuildFile; fileRef = A2D77DEE1B99BB9600CFA432 /* cpp11libtest.mm */; };
 		A2D77DFD1B99E0B400CFA432 /* Logger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A2D77DFB1B99E0B400CFA432 /* Logger.cpp */; };
 		A2D77DFE1B99E0B400CFA432 /* Logger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A2D77DFB1B99E0B400CFA432 /* Logger.cpp */; };
 		A2D77E011B99E48500CFA432 /* IsZero.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A2D77DFF1B99E48500CFA432 /* IsZero.cpp */; };
@@ -28,11 +30,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A28352081BB3BB96006DD834 /* StopWatch.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StopWatch.cpp; sourceTree = "<group>"; };
+		A28352091BB3BB96006DD834 /* StopWatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StopWatch.h; sourceTree = "<group>"; };
 		A2D77DDC1B99BB4500CFA432 /* cpp11lib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = cpp11lib; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2D77DDF1B99BB4500CFA432 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		A2D77DEA1B99BB9600CFA432 /* cpp11libtest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = cpp11libtest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2D77DED1B99BB9600CFA432 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A2D77DEE1B99BB9600CFA432 /* cpp11libtest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = cpp11libtest.m; sourceTree = "<group>"; };
+		A2D77DEE1B99BB9600CFA432 /* cpp11libtest.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = cpp11libtest.mm; sourceTree = "<group>"; };
 		A2D77DFB1B99E0B400CFA432 /* Logger.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Logger.cpp; sourceTree = "<group>"; };
 		A2D77DFC1B99E0B400CFA432 /* Logger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Logger.h; sourceTree = "<group>"; };
 		A2D77DFF1B99E48500CFA432 /* IsZero.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IsZero.cpp; sourceTree = "<group>"; };
@@ -87,7 +91,7 @@
 		A2D77DEB1B99BB9600CFA432 /* cpp11libtest */ = {
 			isa = PBXGroup;
 			children = (
-				A2D77DEE1B99BB9600CFA432 /* cpp11libtest.m */,
+				A2D77DEE1B99BB9600CFA432 /* cpp11libtest.mm */,
 				A2D77DEC1B99BB9600CFA432 /* Supporting Files */,
 			);
 			path = cpp11libtest;
@@ -108,6 +112,8 @@
 				A2D77E001B99E48500CFA432 /* IsZero.h */,
 				A2D77DFB1B99E0B400CFA432 /* Logger.cpp */,
 				A2D77DFC1B99E0B400CFA432 /* Logger.h */,
+				A28352081BB3BB96006DD834 /* StopWatch.cpp */,
+				A28352091BB3BB96006DD834 /* StopWatch.h */,
 			);
 			path = lib;
 			sourceTree = "<group>";
@@ -202,6 +208,7 @@
 				A2D77DE01B99BB4500CFA432 /* main.cpp in Sources */,
 				A2D77E011B99E48500CFA432 /* IsZero.cpp in Sources */,
 				A2D77DFD1B99E0B400CFA432 /* Logger.cpp in Sources */,
+				A283520A1BB3BB96006DD834 /* StopWatch.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,9 +216,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A2D77DEF1B99BB9600CFA432 /* cpp11libtest.m in Sources */,
+				A2D77DEF1B99BB9600CFA432 /* cpp11libtest.mm in Sources */,
 				A2D77E021B99E48500CFA432 /* IsZero.cpp in Sources */,
 				A2D77DFE1B99E0B400CFA432 /* Logger.cpp in Sources */,
+				A283520B1BB3BD25006DD834 /* StopWatch.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,6 +368,7 @@
 				A2D77DE51B99BB4500CFA432 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A2D77DF01B99BB9600CFA432 /* Build configuration list for PBXNativeTarget "cpp11libtest" */ = {
 			isa = XCConfigurationList;
@@ -368,6 +377,7 @@
 				A2D77DF21B99BB9600CFA432 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

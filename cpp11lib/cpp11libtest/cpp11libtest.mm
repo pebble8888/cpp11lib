@@ -11,6 +11,7 @@
 #include <unistd.h>
 #include "Logger.h"
 #include "IsZero.h"
+#include "StopWatch.h"
 
 static char FILEPATH[] = "/tmp/cpp11libtest.log"; 
 
@@ -60,6 +61,20 @@ static char FILEPATH[] = "/tmp/cpp11libtest.log";
     XCTAssert( IsZero( (float)-0.00000001 ) );
     XCTAssert( IsZero( (float)-0.0000001 ) );
     XCTAssert( !IsZero( (float)-0.000001 ) );
+}
+
+- (void)testStopWatch {
+    
+    StopWatch sw;
+    
+    usleep(1000);
+    
+    sw.stop();
+    
+    FILE* fp = fopen("/tmp/a.log", "a");
+    sw.print(fp);
+    
+    fclose(fp);
 }
 
 @end

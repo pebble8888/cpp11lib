@@ -19,6 +19,7 @@ void Logger(const char* fmt, ...);
 #else
 #define DEBUG_LOG(fmt,...)
 #endif
+    
 
 #ifdef __cplusplus
 }
