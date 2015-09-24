@@ -24,7 +24,12 @@ void StopWatch::stop(void)
     elapsed_microseconds_ = std::chrono::duration_cast<std::chrono::microseconds>(end - start_);
 }
 
-void StopWatch::print(FILE* fp)
+long StopWatch::microseconds(void)
 {
-    fprintf(fp, "%lld us", elapsed_microseconds_.count());
+    return static_cast<long>( elapsed_microseconds_.count() );
+}
+
+std::string StopWatch::description(void)
+{
+    return std::to_string(elapsed_microseconds_.count()) + " us";
 }

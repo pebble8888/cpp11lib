@@ -11,13 +11,16 @@
 
 #include <stdio.h>
 #include <chrono>
+#include <string>
+
 
 class StopWatch {
 public:
     StopWatch();
     void start(void);
     void stop(void);
-    void print(FILE* fp);
+    std::string description(void);
+    long microseconds(void);
 private:
     std::chrono::system_clock::time_point start_;
     std::chrono::microseconds elapsed_microseconds_;
