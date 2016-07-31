@@ -72,7 +72,7 @@ static char FILEPATH[] = "/tmp/cpp11libtest.log";
     sw.stop();
     
     FILE* fp = fopen("/tmp/a.log", "a");
-    sw.print(fp);
+    fprintf(fp, "%s\n", sw.description().c_str());
     
     fclose(fp);
 }
