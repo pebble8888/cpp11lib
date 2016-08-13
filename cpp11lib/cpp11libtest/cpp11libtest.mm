@@ -12,6 +12,8 @@
 #include "Logger.h"
 #include "IsZero.h"
 #include "StopWatch.h"
+#include "SpinLock.hpp"
+#include <thread>
 
 static char FILEPATH[] = "/tmp/cpp11libtest.log"; 
 
@@ -75,6 +77,36 @@ static char FILEPATH[] = "/tmp/cpp11libtest.log";
     fprintf(fp, "%s\n", sw.description().c_str());
     
     fclose(fp);
+}
+
+SpinLock g_lk;
+int g_count = 0;
+
+void func1(void)
+{
+    for (int i = 0; i < 10000; ++i){
+        g_lk.lock();
+        g_count++;
+        g_lk.unlock();
+    }
+}
+
+void func2(void)
+{
+    for (int i = 0; i < 10000; ++i){
+        g_lk.lock();
+        g_count--;
+        g_lk.unlock();
+    }
+}
+
+- (void)testSpinLock {
+   
+    std::thread th1(func1);
+    std::thread th2(func2);
+    th1.join();
+    th2.join();
+    XCTAssertEqual(g_count, 0);
 }
 
 @end

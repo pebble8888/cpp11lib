@@ -13,6 +13,7 @@
 		A260953F1D4E1576006B2F85 /* Logger.h in Sources */ = {isa = PBXBuildFile; fileRef = A2D77DFC1B99E0B400CFA432 /* Logger.h */; };
 		A26095401D4E1576006B2F85 /* StopWatch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A28352081BB3BB96006DD834 /* StopWatch.cpp */; };
 		A26095411D4E1576006B2F85 /* StopWatch.h in Sources */ = {isa = PBXBuildFile; fileRef = A28352091BB3BB96006DD834 /* StopWatch.h */; };
+		A272DCBE1D5EF81800D20184 /* SpinLock.hpp in Headers */ = {isa = PBXBuildFile; fileRef = A272DCBC1D5EF81800D20184 /* SpinLock.hpp */; };
 		A283520B1BB3BD25006DD834 /* StopWatch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A28352081BB3BB96006DD834 /* StopWatch.cpp */; };
 		A2D77DEF1B99BB9600CFA432 /* cpp11libtest.mm in Sources */ = {isa = PBXBuildFile; fileRef = A2D77DEE1B99BB9600CFA432 /* cpp11libtest.mm */; };
 		A2D77DFE1B99E0B400CFA432 /* Logger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A2D77DFB1B99E0B400CFA432 /* Logger.cpp */; };
@@ -21,6 +22,7 @@
 
 /* Begin PBXFileReference section */
 		A26095381D4E1562006B2F85 /* libcpp11lib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libcpp11lib.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A272DCBC1D5EF81800D20184 /* SpinLock.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SpinLock.hpp; sourceTree = "<group>"; };
 		A28352081BB3BB96006DD834 /* StopWatch.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StopWatch.cpp; sourceTree = "<group>"; };
 		A28352091BB3BB96006DD834 /* StopWatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StopWatch.h; sourceTree = "<group>"; };
 		A2D77DEA1B99BB9600CFA432 /* cpp11libtest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = cpp11libtest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -97,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				A2D77DFF1B99E48500CFA432 /* IsZero.cpp */,
+				A272DCBC1D5EF81800D20184 /* SpinLock.hpp */,
 				A2D77E001B99E48500CFA432 /* IsZero.h */,
 				A2D77DFB1B99E0B400CFA432 /* Logger.cpp */,
 				A2D77DFC1B99E0B400CFA432 /* Logger.h */,
@@ -113,6 +116,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A272DCBE1D5EF81800D20184 /* SpinLock.hpp in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,6 +372,7 @@
 				A260953B1D4E1562006B2F85 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A2D77DD71B99BB4500CFA432 /* Build configuration list for PBXProject "cpp11lib" */ = {
 			isa = XCConfigurationList;
